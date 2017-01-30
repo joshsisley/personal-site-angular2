@@ -1,0 +1,454 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+.navbar-custom {
+    box-shadow: none;
+    background: none;
+}
+
+.navbar-custom a {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.navbar-custom-about {
+    background: #F1F1F2;
+    height: 65px;
+}
+
+.navbar-custom-about a {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.navbar-custom-about .logo {
+    padding-top: 9px;
+    padding-left: 33px;
+}
+
+.navbar-custom-about input {
+    height: 42px;
+    border-radius: 1px;
+    margin-top: 9px;
+    font-size: 17px;
+}
+
+.navbar-custom li {
+    padding-top: 10px;
+}
+
+.navbar-custom-second {
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-custom-second .navbar-nav {
+    margin-left: 8.3333333%;
+}
+
+.navbar-custom-second a {
+    padding-bottom: 17px !important;
+    padding-top: 8px !important;
+    width: 100px;
+    color: #3369E8;
+    text-align: center;
+}
+
+.activeSection {
+    border-bottom: 3px solid #3369E8;
+}
+
+.google-type-header {
+    margin-bottom: 12px !important;
+}
+
+.google-type-header h1 {
+    font-size: 87px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 32%;
+    letter-spacing: -4px;
+}
+
+.google-type-header h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.google-type-input input {
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08) !important;
+    border: none !important;
+    border-radius: 2px !important;
+    width: 88% !important;
+    margin-left: 5% !important;
+    padding-left: 2% !important;
+    font-size: 16px !important;
+}
+
+.google-type-buttons {
+    margin-top: -7px !important;
+}
+
+.j-text {
+    color: #3369E8 !important;
+}
+
+.o-text {
+    color: #D50F25;
+}
+
+.s-text {
+    color: #EEB211;
+}
+
+.h-text {
+    color: #009925;
+}
+
+.experience-section h4 a {
+    color: #1a0dab
+}
+
+.top-line {
+    margin-top: -6px;
+    color: #888;
+}
+
+.new-result {
+    margin-top: 30px;
+}
+
+.non-link {
+    margin-top: 22px;
+    color: #1a0dab;
+    font-size: 18px;
+}
+
+.result-second-line {
+    font-size: 14px;
+    margin-top: -9px;
+    color: #006621;
+}
+
+.result-second-line a {
+    color: #006621;
+}
+
+.result-info {
+    color: #545454;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.my-info {
+    margin-top: 22px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+.my-info .btn-default {
+    border-radius: 2px;
+    margin-top: 22px;
+}
+
+.my-info h5 {
+    margin: 3px 0px;
+}
+
+.newSkill {
+    margin-top: 32px;
+}
+
+.newSkill h4 {
+    color: #1a0dab;
+    margin-top: 0px;
+}
+
+.email-form {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.navbar-list a {
+    font-size: 18px;
+    margin-top: 9px;
+    margin-right: 17px;
+    color: #3369E8 !important;
+}
+
+.name-list {
+    font-size: 18px;
+    margin-top: 17px;
+    margin-right: 17px;
+}
+
+.prof-image {
+    height: 137px;
+}
+
+.google-type-buttons button:hover {
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+}
+
+.left-button {
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    height: 36px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    /* line-height: 27px; */
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    margin-right: 1%;
+    margin-left: 32.8% !important;
+    color: #757575;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.right-button {
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    height: 35px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    /* line-height: 27px; */
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    font-weight: bold;
+    font-size:13px;
+}
+
+.search-navbar {
+    background: #fafafa;
+    color: #666;
+    font-size: small;
+    border-bottom: 1px solid #ebebeb;
+    margin-top: -21px;
+    margin-bottom: 35px;
+    outline-width: 0;
+    outline: none;
+    position: relative;
+    z-index: 102;
+    box-shadow: none;
+}
+
+.brand-logo {
+    font-size: 30px;
+    letter-spacing: -5px;
+    font-size: 38px !important;
+    margin-top: 28px;
+    margin-left: 14px;
+} 
+
+.tabs {
+    height: 80px !important;
+    padding-left: 12% !important;
+}
+
+.tab {
+    margin-top: 32px !important;
+}
+
+.tab a.selected {
+    border-bottom: 3px solid #4285f4;
+    color: #4285f4 !important;
+}
+
+.tab a {
+    color: #777 !important;
+    font-size: small !important;
+    text-transform: none !important;
+}
+
+.material-input {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08) !important; 
+    border: none !important;
+    border-radius: 2px !important;
+    margin-left: 5% !important;
+    padding-left: 1% !important;
+    font-size: 16px !important;
+    width: 43% !important;
+    color: #222 !important;
+    position: absolute;
+    top: 39px;
+    left: 7%;
+    height: 44px !important;
+}
+
+.tab-section {
+    margin-left: 13%;
+    width: 41%;
+}
+
+.card-personal {
+    width: 35%;
+    left: 60%;
+    top: 152px;
+    position: absolute;
+}
+
+.card-action {
+    border-bottom: 1px solid #eee;
+    padding: 16px 0 0 20px !important;
+}
+
+.card-action .row {
+    margin-bottom: 5px !important;
+}
+
+.card-action img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-name {
+    font-size: medium;
+    margin-top: 0px;
+    margin-left: -8px;
+}
+
+.card-job-title {
+    font-size: small;
+    color: #878787 !important;
+    margin-top: -19px;
+    margin-left: -8px;
+}
+
+.card-text {
+    font-size: small;
+    color: #222;
+    margin-top: -3px !important;
+}
+
+.button-row {
+    padding: 10px 0 27px 0;
+}
+
+.email-row {
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.email-row p {
+    font-size: small;
+}
+
+.email-row p span {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.btn-contact {
+    font-size: small;
+    color: #444;
+    background: #f5f5f5;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #dcdcdc;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+.result-picture {
+    width: 18%;
+    float: left;
+    margin-top: 22px;
+}
+
+.result-text {
+    width: 80%;
+    margin-left: 2%;
+    float: left;
+}
+
+.philanthropy {
+    margin-top: 0px !important;
+    float: left;
+}
+
+.my-contact-form {
+    margin-top: 50px;
+}
+
+/* label color */
+   /* label focus color */
+   .input-field input:focus + label {
+     color: #4285f4 !important;
+   }    
+
+   .input-field textarea:focus + label {
+     color: #4285f4 !important;
+   }
+
+   .input-field textarea:focus {
+     border-bottom: 1px solid #4285f4 !important;
+     box-shadow: 0 1px 0 0 #4285f4 !important;
+   }
+
+   .input-field input:focus {
+     border-bottom: 1px solid #4285f4 !important;
+     box-shadow: 0 1px 0 0 #4285f4 !important;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+
+.btn-submit-msg {
+    background: #4285f4 !important;
+}
+
+@media (max-width: 414px) {
+    .google-type-input input {
+        width: 100% !important;
+        margin-left: -6px !important;
+        padding-left: 4% !important;
+    }
+
+    .google-type-header h1 {
+        font-size: 55px;
+    }
+
+    .tabs {
+        padding-left: 0 !important;
+    }
+
+    .material-input {
+        width: 88% !important;
+        left: 0%;
+        padding-left: 2% !important;
+    }
+
+    .tab-section {
+        margin-left: 7%;
+        width: 86%;
+    }
+
+    .card-personal {
+        width: 86%;
+        margin-left: 7%;
+        position: relative;
+        left: 0;
+        top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 1024px) {
+    .material-input {
+        left: 11%;
+        width: 48% !important;
+    }
+    .tabs {
+        padding-left: 16% !important;
+    }
+}
+
