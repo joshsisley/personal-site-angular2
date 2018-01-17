@@ -296,6 +296,14 @@ h1 {
     position: absolute;
 }
 
+.card-header {
+    font-size: 28px;
+    line-height: 1.2;
+    margin: -10px 0px;
+    /* font-weight: 400; */
+    color: rgba(0,0,0,.87);
+}
+
 .card-action {
     border-bottom: 1px solid #eee;
     padding: 16px 0 0 20px !important;

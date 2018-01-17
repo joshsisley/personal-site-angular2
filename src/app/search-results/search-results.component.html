@@ -1,12 +1,12 @@
 <nav class="nav-extended search-navbar">
   <div class="nav-wrapper">
     <a href="#" class="brand-logo hide-on-med-and-down">
-      <span class="j-text">J</span>
-      <span class="o-text">o</span>
+      <span class="j-text">S</span>
+      <span class="o-text">i</span>
       <span class="s-text">s</span>
-      <span class="j-text">h</span>
-      <span class="h-text">u</span>
-      <span class="o-text">a</span>
+      <span class="j-text">l</span>
+      <span class="h-text">e</span>
+      <span class="o-text">y</span>
     </a>
     <input class="form-control material-input" value="Joshua Sisley" />
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -21,10 +21,10 @@
       <li><a href="collapsible.html">JavaScript</a></li>
     </ul>
     <ul class="tabs tabs-transparent">
+				<li class="tab tab-custom"><a [class.selected]="selectedTab == 'projects'" (click)="selectedTab = 'projects'">Recent Work</a></li>
       <li class="tab tab-custom"><a [class.selected]="selectedTab == 'experience'" (click)="selectedTab = 'experience'">Experience</a></li>
       <!-- <li class="tab tab-custom"><a href="#test4">Blog</a></li> -->
       <!-- Eventually the blog will pull from my actually blog site that I create -->
-      <li class="tab tab-custom"><a [class.selected]="selectedTab == 'projects'" (click)="selectedTab = 'projects'">Projects</a></li>
       <li class="tab tab-custom"><a [class.selected]="selectedTab == 'philanthropy'" (click)="selectedTab = 'philanthropy'">Philanthropy</a></li>
       <li class="tab tab-custom"><a [class.selected]="selectedTab == 'contact'" (click)="selectedTab = 'contact'">Contact</a></li>
     </ul>
@@ -37,6 +37,23 @@
 		<philanthropy-tab *ngIf="selectedTab == 'philanthropy'"></philanthropy-tab>
 		<contact-tab *ngIf="selectedTab == 'contact'"></contact-tab>
 	</div>
+	<div *ngIf="selectedTab == 'projects'" class="card-personal">
+			<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" style="max-height:270px;" src="./assets/images/groupedprojects.jpg">
+					</div>
+					<div class="card-content" style="padding-bottom:7px;padding-left:8px;">
+						<div class="row">
+							<div class="col s12">
+								<h5 class="card-header">Projects</h5>
+							</div>
+						</div>
+					</div>
+					<div class="card-action">
+						<p class="result-info">This is where the description will go for the projects and pictures above.</p>
+					</div>
+			</div>
+	</div>
 	<div *ngIf="selectedTab == 'experience' || selectedTab == 'contact'" class="card-personal">
 		<div class="card horizontal">
 	      <div class="card-stacked">
@@ -47,7 +64,7 @@
 	      			</div>
 	      			<div class="col s10">
 	      				<p class="card-name">Joshua Sisley</p>
-	      				<p class="card-job-title">Front End Developer</p>
+	      				<p class="card-job-title">Freelance Software Developer</p>
 	      			</div>
 	      		</div>
 	        </div>
@@ -57,16 +74,13 @@
 	        			<div *ngIf="selectedTab == 'experience'" class="button-row">
 	        				<a class="btn-contact" (click)="selectedTab = 'contact'">Contact Me</a>
 	        			</div>
-	        			<p class="card-text">Works at Shoeboxed</p>
+	        			<p class="card-text">Self Employed at Sisley Tech LLC</p>
 	        			<p class="card-text">Lives in Durham, NC</p>
 	        			<div class="email-row">
-	        				<p><span>Email:</span>josh@joshuasisley.com</p>
-	        			</div>
-	        			<div *ngIf="selectedTab == 'contact'" class="email-row">
-	        				<p><span>LinkedIn:</span><a target="_blank" href="https://www.linkedin.com/in/joshua-sisley-12995154">Visit my profile</a></p>
+	        				<p><span>Email:</span>josh@sisley.tech</p>
 	        			</div>
 	        			<div class="email-row">
-	        				<p><span>Blog:</span><a target="_blank" href="http://programmingpathway.com">Programming Pathway</a></p>
+	        				<p><span>LinkedIn:</span><a target="_blank" href="https://www.linkedin.com/in/joshua-sisley-12995154">Visit my profile</a></p>
 	        			</div>
 	        		</div>
 	        		<div class="col s4">

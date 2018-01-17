@@ -7,6 +7,6 @@ import { Component,OnInit } from '@angular/core';
 export class SearchResultsComponent implements OnInit { 
 	selectedTab:string;
 	ngOnInit() {
-		this.selectedTab = "experience";
+		this.selectedTab = "projects";
 	}
 }
