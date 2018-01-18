@@ -96,18 +96,22 @@ h1 {
 
 .j-text {
     color: #3369E8 !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .o-text {
     color: #D50F25;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .s-text {
     color: #EEB211;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .h-text {
     color: #009925;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .experience-section h4 a {
@@ -306,7 +310,7 @@ h1 {
 
 .card-action {
     border-bottom: 1px solid #eee;
-    padding: 16px 0 0 20px !important;
+    padding: 16px 5px 0 20px !important;
 }
 
 .card-action .row {
@@ -351,7 +355,7 @@ h1 {
 .image-modal {
     background: #222;
     height: 400px;
-    position: absolute;
+    position: fixed;
     top: 150px;
     width: 100%;
     z-index: 999;
@@ -567,6 +571,11 @@ h1 {
         left: 0;
         top: 30px;
         margin-bottom: 30px;
+    }
+
+    .card-action img {
+        height: 30px;
+        margin-top: 5px;
     }
 }
 

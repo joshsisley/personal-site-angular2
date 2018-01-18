@@ -1,12 +1,12 @@
 <nav class="nav-extended search-navbar">
   <div class="nav-wrapper">
     <a href="#" class="brand-logo hide-on-med-and-down">
-      <span class="j-text">S</span>
-      <span class="o-text">i</span>
+      <span class="j-text">J</span>
+      <span class="o-text">o</span>
       <span class="s-text">s</span>
-      <span class="j-text">l</span>
-      <span class="h-text">e</span>
-      <span class="o-text">y</span>
+      <span class="j-text">h</span>
+      <span class="h-text">u</span>
+      <span class="o-text">a</span>
     </a>
     <input class="form-control material-input" value="Joshua Sisley" />
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -23,7 +23,7 @@
     <ul class="tabs tabs-transparent">
 				<li class="tab tab-custom"><a [class.selected]="selectedTab == 'projects'" (click)="selectedTab = 'projects'">Recent Work</a></li>
       <li class="tab tab-custom"><a [class.selected]="selectedTab == 'experience'" (click)="selectedTab = 'experience'">Experience</a></li>
-			<li class="tab tab-custom"><a [class.selected]="selectedTab == 'blog'" (click)="selectedTab = 'blog'">Blog</a></li>
+			<!-- <li class="tab tab-custom"><a [class.selected]="selectedTab == 'blog'" (click)="selectedTab = 'blog'">Blog</a></li> -->
 			<!-- <li class="tab tab-custom"><a href="#test4">Blog</a></li> -->
       <!-- Eventually the blog will pull from my actually blog site that I create -->
       <li class="tab tab-custom"><a [class.selected]="selectedTab == 'philanthropy'" (click)="selectedTab = 'philanthropy'">Philanthropy</a></li>
@@ -66,7 +66,7 @@
 					</div>
 			</div>
 	</div>
-	<div *ngIf="selectedTab == 'experience' || selectedTab == 'contact'" class="card-personal">
+	<div *ngIf="selectedTab == 'experience' || selectedTab == 'contact' || selectedTab == 'philanthropy'" class="card-personal">
 		<div class="card horizontal">
 	      <div class="card-stacked">
 	      	<div class="card-action">
@@ -83,7 +83,7 @@
 	        <div class="card-content">
 	        	<div class="row">
 	        		<div class="col s8">
-	        			<div *ngIf="selectedTab == 'experience'" class="button-row">
+	        			<div *ngIf="selectedTab == 'experience' || selectedTab == 'philanthropy'" class="button-row">
 	        				<a class="btn-contact" (click)="selectedTab = 'contact'">Contact Me</a>
 	        			</div>
 	        			<p class="card-text">Self Employed at Sisley Tech LLC</p>
