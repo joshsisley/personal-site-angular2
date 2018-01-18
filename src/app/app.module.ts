@@ -12,6 +12,7 @@ import {PhilanthropyComponent} from './search-results/philanthropy/philanthropy.
 import {NavbarComponent} from './search-results/navbar/navbar.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { BlogComponent } from './search-results/blog/blog.component';
 
 @NgModule({
   imports:      [ 
@@ -26,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
     ExperienceComponent,
     ProjectsComponent,
     PhilanthropyComponent,
-    ContactComponent
+    ContactComponent,
+    BlogComponent
   ],
   bootstrap:    [ AppComponent ]
 })

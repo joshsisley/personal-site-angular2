@@ -23,7 +23,8 @@
     <ul class="tabs tabs-transparent">
 				<li class="tab tab-custom"><a [class.selected]="selectedTab == 'projects'" (click)="selectedTab = 'projects'">Recent Work</a></li>
       <li class="tab tab-custom"><a [class.selected]="selectedTab == 'experience'" (click)="selectedTab = 'experience'">Experience</a></li>
-      <!-- <li class="tab tab-custom"><a href="#test4">Blog</a></li> -->
+			<li class="tab tab-custom"><a [class.selected]="selectedTab == 'blog'" (click)="selectedTab = 'blog'">Blog</a></li>
+			<!-- <li class="tab tab-custom"><a href="#test4">Blog</a></li> -->
       <!-- Eventually the blog will pull from my actually blog site that I create -->
       <li class="tab tab-custom"><a [class.selected]="selectedTab == 'philanthropy'" (click)="selectedTab = 'philanthropy'">Philanthropy</a></li>
       <li class="tab tab-custom"><a [class.selected]="selectedTab == 'contact'" (click)="selectedTab = 'contact'">Contact</a></li>
@@ -34,13 +35,24 @@
 	<div class="tab-section">
 		<experience-tab *ngIf="selectedTab == 'experience'"></experience-tab>
 		<projects-tab *ngIf="selectedTab == 'projects'"></projects-tab>
+		<blog *ngIf="selectedTab == 'blog'"></blog>
 		<philanthropy-tab *ngIf="selectedTab == 'philanthropy'"></philanthropy-tab>
 		<contact-tab *ngIf="selectedTab == 'contact'"></contact-tab>
 	</div>
+	<!-- Images modal that appears if selected -->
+	<div *ngIf="showMoreImages" class="image-modal">
+		<img height="390" class="responsive-img selected-image" src="{{selectedImageObj.src}}" />
+		<p class="img-desc">{{selectedImageObj.description}}</p>
+		<a class="modal-arrow-left" (click)="prevImage()"><i class="material-icons">keyboard_arrow_left</i></a>
+		<a class="modal-arrow-right" (click)="nextImage()"><i class="material-icons">keyboard_arrow_right</i></a>
+		<a class="close-more-images" (click)="closeImagesModal()"><i class="material-icons">clear</i></a>
+	</div>
+	<!-- This is the card that displays when the Recent Work tab is selected -->
 	<div *ngIf="selectedTab == 'projects'" class="card-personal">
 			<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" style="max-height:270px;" src="./assets/images/groupedprojects.jpg">
+							<a class="more-pictures-btn" (click)="showMorePictures()">More images</a>
 					</div>
 					<div class="card-content" style="padding-bottom:7px;padding-left:8px;">
 						<div class="row">
@@ -50,7 +62,7 @@
 						</div>
 					</div>
 					<div class="card-action">
-						<p class="result-info">This is where the description will go for the projects and pictures above.</p>
+						<p style="margin-top:-3px;" class="result-info">Check out the images above to take a look at all of my recent projects.</p>
 					</div>
 			</div>
 	</div>

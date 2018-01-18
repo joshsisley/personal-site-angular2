@@ -337,6 +337,126 @@ h1 {
     margin-top: -3px !important;
 }
 
+.more-pictures-btn {
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    right: 0;
+    bottom: 0;
+    padding: 5px 13px;
+    text-shadow: 0 0 2px black, 0 0 3px black;
+    font-size: 16px;
+    color: white;
+}
+
+.image-modal {
+    background: #222;
+    height: 400px;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    z-index: 999;
+}
+
+.close-more-images {
+    cursor: pointer;
+    height: 30px;
+    padding: 7px;
+    position: absolute;
+    right: 25px;
+    top: 8px;
+    width: 30px;
+    z-index: 2;
+}
+
+.close-more-images i {
+    font-size: 35px;
+    color:rgba(255,255,255,0.18);
+}
+
+.modal-arrow-left {
+    border: 1px solid #191919;
+    border-radius: 2px;
+    background-color: #3d3d3d;
+    cursor: pointer;
+    height: 77px;
+    margin: 0;
+    padding: 0;
+    top: 165px;
+    position: absolute;
+    -webkit-touch-callout: none;
+    width: 32px;
+    z-index: 1;
+}
+
+.modal-arrow-left i {
+    bottom: 0;
+    height: 35px;
+    left: -2px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 35px;
+    color: rgba(255,255,255,0.7);
+}
+
+.modal-arrow-right {
+    border: 1px solid #191919;
+    border-radius: 2px;
+    background-color: #3d3d3d;
+    cursor: pointer;
+    height: 77px;
+    margin: 0;
+    top: 165px;
+    padding: 0;
+    position: absolute;
+    -webkit-touch-callout: none;
+    width: 32px;
+    z-index: 1;
+    right: 0;
+}
+
+.modal-arrow-right i {
+    bottom: 0;
+    height: 35px;
+    left: -2px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 35px;
+    color: rgba(255,255,255,0.7);
+}
+
+.selected-image {
+    max-height: 90%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.img-desc {
+    position: absolute;
+    bottom: 0;
+    width: 290px;
+    left: 0;
+    text-align: center;
+    right: 0;
+    color: white;
+    font-size: 16px;
+    top: 350px;
+    padding: 5px;
+    margin: 0 auto;
+    height: 30px;
+    background: rgba(0,0,0,0.5);
+}
+
 .button-row {
     padding: 10px 0 27px 0;
 }
