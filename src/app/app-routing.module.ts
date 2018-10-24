@@ -1,15 +1,10 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import {HomeComponent} from './home/home.component';
-import {SearchResultsComponent} from './search-results/search-results.component';
+import { HomeComponent } from './home/home.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 const routes: Routes = [
-	{
-		path: '',
-		redirectTo: '/',
-		pathMatch: 'full'
-	},
 	{
 		path: '',
 		component: HomeComponent
@@ -17,7 +12,11 @@ const routes: Routes = [
 	{
 		path: 'search-results',
 		component: SearchResultsComponent
-	}
+	},
+	{
+		path: '**',
+		redirectTo: '/search-results'
+	},
 ];
 
 @NgModule({
@@ -25,4 +24,4 @@ const routes: Routes = [
 	exports: [RouterModule]
 })
 
-export class AppRoutingModule {}
+export class AppRoutingModule { }

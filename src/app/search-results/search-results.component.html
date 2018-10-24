@@ -1,35 +1,37 @@
 <nav class="nav-extended search-navbar">
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo hide-on-med-and-down">
-      <span class="j-text">J</span>
-      <span class="o-text">o</span>
-      <span class="s-text">s</span>
-      <span class="j-text">h</span>
-      <span class="h-text">u</span>
-      <span class="o-text">a</span>
-    </a>
-    <input class="form-control material-input" value="Joshua Sisley" />
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
-    </ul>
-    <ul class="side-nav" id="mobile-demo">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
-    </ul>
-    <ul class="tabs tabs-transparent">
-				<li class="tab tab-custom"><a [class.selected]="selectedTab == 'projects'" (click)="selectedTab = 'projects'">Recent Work</a></li>
-      <li class="tab tab-custom"><a [class.selected]="selectedTab == 'experience'" (click)="selectedTab = 'experience'">Experience</a></li>
-			<!-- <li class="tab tab-custom"><a [class.selected]="selectedTab == 'blog'" (click)="selectedTab = 'blog'">Blog</a></li> -->
-			<!-- <li class="tab tab-custom"><a href="#test4">Blog</a></li> -->
-      <!-- Eventually the blog will pull from my actually blog site that I create -->
-      <li class="tab tab-custom"><a [class.selected]="selectedTab == 'philanthropy'" (click)="selectedTab = 'philanthropy'">Philanthropy</a></li>
-      <li class="tab tab-custom"><a [class.selected]="selectedTab == 'contact'" (click)="selectedTab = 'contact'">Contact</a></li>
-    </ul>
-  </div>
+	<div class="nav-wrapper">
+		<a href="#" class="brand-logo brand-logo-mobile">
+			<span class="j-text">S</span>
+			<span class="o-text">i</span>
+			<span class="s-text">s</span>
+			<span class="j-text">l</span>
+			<span class="h-text">e</span>
+			<span class="o-text">y</span>
+		</a>
+		<div class="mobile-search">
+			<input class="form-control material-input" value="Joshua Sisley" />
+			<div class="search-results-icon-input">
+				<i class="material-icons">search</i>
+			</div>
+			<div class="nav-wrapper" style="padding-top: 5px; margin-right: 1rem;" id="bs-example-navbar-collapse-1">
+				<a href="https://www.linkedin.com/in/joshua-sisley-12995154" target="_blank" class="brand-logo right hide-on-med-and-down"><img
+					 style="height:35px;width:35px;" src="./assets/images/mypic.jpg" class="circle responsive-img" /></a>
+				<a href="https://www.linkedin.com/in/joshua-sisley-12995154" target="_blank" class="brand-logo right hide-on-med-and-down"
+				 style="color:gray;right: 50px;top: 0px;"><i class="large material-icons">view_module</i></a>
+			</div>
+			<ul class="tabs tabs-transparent">
+				<li class="tab tab-custom"><a [class.selected]="selectedTab == 'experience'" (click)="selectedTab = 'experience'">Experience</a></li>
+				<li class="tab tab-custom"><a [class.selected]="selectedTab == 'projects'" (click)="selectedTab = 'projects'">Recent
+						Work
+					</a></li>
+				<!-- <li class="tab tab-custom"><a [class.selected]="selectedTab == 'blog'" (click)="selectedTab = 'blog'">Blog</a></li> -->
+				<!-- <li class="tab tab-custom"><a href="#test4">Blog</a></li> -->
+				<!-- Eventually the blog will pull from my actually blog site that I create -->
+				<li class="tab tab-custom"><a [class.selected]="selectedTab == 'philanthropy'" (click)="selectedTab = 'philanthropy'">Philanthropy</a></li>
+				<li class="tab tab-custom"><a [class.selected]="selectedTab == 'contact'" (click)="selectedTab = 'contact'">Contact</a></li>
+			</ul>
+		</div>
+	</div>
 </nav>
 <div class="row">
 	<div class="tab-section">
@@ -49,58 +51,58 @@
 	</div>
 	<!-- This is the card that displays when the Recent Work tab is selected -->
 	<div *ngIf="selectedTab == 'projects'" class="card-personal">
-			<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" style="max-height:270px;" src="./assets/images/groupedprojects.jpg">
-							<a class="more-pictures-btn" (click)="showMorePictures()">More images</a>
+		<div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" style="max-height:270px;" src="./assets/images/groupedprojects.jpg">
+				<a class="more-pictures-btn" (click)="showMorePictures()">More images</a>
+			</div>
+			<!-- <div class="card-content" style="padding-bottom:7px;padding-left:8px;">
+				<div class="row">
+					<div class="col s12">
+						<h5 class="card-header">Projects</h5>
 					</div>
-					<div class="card-content" style="padding-bottom:7px;padding-left:8px;">
-						<div class="row">
-							<div class="col s12">
-								<h5 class="card-header">Projects</h5>
-							</div>
+				</div>
+			</div>
+			<div class="card-action">
+				<p style="margin-top:-3px;" class="result-info">Check out the images above to take a look at all of my recent projects.</p>
+			</div> -->
+		</div>
+	</div>
+	<div *ngIf="selectedTab == 'experience' || selectedTab == 'contact'" class="card-personal">
+		<div class="card horizontal">
+			<div class="card-stacked">
+				<div class="card-action">
+					<div class="row">
+						<div class="col s2">
+							<img class="circle responsive-img" src="./assets/images/mypic.jpg" />
+						</div>
+						<div class="col s10">
+							<p class="card-name">Joshua Sisley</p>
+							<p class="card-job-title">Full Stack JavaScript Developer at Cisco</p>
 						</div>
 					</div>
-					<div class="card-action">
-						<p style="margin-top:-3px;" class="result-info">Check out the images above to take a look at all of my recent projects.</p>
+				</div>
+				<div class="card-content">
+					<div class="row">
+						<div class="col s8" style="margin-top: 15px;">
+							<div *ngIf="selectedTab == 'experience' || selectedTab == 'philanthropy'" class="button-row">
+								<a class="btn-contact" (click)="selectedTab = 'contact'">Contact Me</a>
+							</div>
+							<p class="card-text">Full Stack JavaScript Developer at Cisco</p>
+							<p class="card-text">Lives in Durham, NC</p>
+							<div class="email-row">
+								<p><span>Email:</span>josh@sisley.tech</p>
+							</div>
+							<div class="email-row">
+								<p><span>LinkedIn:</span><a target="_blank" href="https://www.linkedin.com/in/joshua-sisley-12995154">Visit my profile</a></p>
+							</div>
+						</div>
+						<div class="col s4" style="text-align: right;">
+							<img style="max-width: 90%;" class="responsive-img" src="./assets/images/mypic.jpg" />
+						</div>
 					</div>
+				</div>
 			</div>
+		</div>
 	</div>
-	<div *ngIf="selectedTab == 'experience' || selectedTab == 'contact' || selectedTab == 'philanthropy'" class="card-personal">
-		<div class="card horizontal">
-	      <div class="card-stacked">
-	      	<div class="card-action">
-	      		<div class="row">
-	      			<div class="col s2">
-	      				<img class="circle responsive-img" src="./assets/images/mypic.jpg" />
-	      			</div>
-	      			<div class="col s10">
-	      				<p class="card-name">Joshua Sisley</p>
-	      				<p class="card-job-title">Freelance Software Developer</p>
-	      			</div>
-	      		</div>
-	        </div>
-	        <div class="card-content">
-	        	<div class="row">
-	        		<div class="col s8">
-	        			<div *ngIf="selectedTab == 'experience' || selectedTab == 'philanthropy'" class="button-row">
-	        				<a class="btn-contact" (click)="selectedTab = 'contact'">Contact Me</a>
-	        			</div>
-	        			<p class="card-text">Self Employed at Sisley Tech LLC</p>
-	        			<p class="card-text">Lives in Durham, NC</p>
-	        			<div class="email-row">
-	        				<p><span>Email:</span>josh@sisley.tech</p>
-	        			</div>
-	        			<div class="email-row">
-	        				<p><span>LinkedIn:</span><a target="_blank" href="https://www.linkedin.com/in/joshua-sisley-12995154">Visit my profile</a></p>
-	        			</div>
-	        		</div>
-	        		<div class="col s4">
-	        			<img class="circle responsive-img" src="./assets/images/mypic.jpg" />
-	        		</div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-    </div>
 </div>

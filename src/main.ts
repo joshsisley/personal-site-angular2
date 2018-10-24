@@ -6,4 +6,6 @@ import { environment } from './environments/environment';
 
 import { AppModule } from './app/app.module';
 
+enableProdMode();
+
 platformBrowserDynamic().bootstrapModule(AppModule);

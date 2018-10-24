@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent }  from './app.component';
 import {HomeComponent} from './home/home.component';
@@ -13,11 +14,15 @@ import {NavbarComponent} from './search-results/navbar/navbar.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BlogComponent } from './search-results/blog/blog.component';
+import { ContactService } from './search-results/contact/contact.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports:      [ 
   	BrowserModule,
-  	AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   declarations: [ 
   	AppComponent,
@@ -29,6 +34,9 @@ import { BlogComponent } from './search-results/blog/blog.component';
     PhilanthropyComponent,
     ContactComponent,
     BlogComponent
+  ],
+  providers: [
+    ContactService
   ],
   bootstrap:    [ AppComponent ]
 })

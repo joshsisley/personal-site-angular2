@@ -1,27 +1,29 @@
 <div class="card horizontal">
-	<div class="card-stacked">
-	    <div class="card-action">
-	        <div class="row">
-	      		<p class="card-name" style="font-size: x-large;">Get in touch with me!</p>
-	      		<p class="card-job-title">If you are a small business or startup looking for help with your next project I’d love to help. Please take a minute to fill out this form and I will reach out to you shortly!</p>
-	      	</div>
-	    </div>
+    <div class="card-stacked">
+        <div class="card-action" style="padding: 16px 24px !important;">
+            <div class="row">
+                <p class="card-name" style="font-size: x-large;">Get in touch with me!</p>
+                <p class="card-job-title">If you are a small business or startup looking for help with your next project
+                    I’d love to help. Please take a minute to fill out this form and I will reach out to you shortly!</p>
+            </div>
+        </div>
     </div>
 </div>
-<form class="my-contact-form" method="post" action="mailer.php">
+<form class="my-contact-form" (submit)="sendEmail(message)">
     <div>
         <div class="input-field">
-            <input id="icon_prefix" name="inputName" type="text" class="validate">
+            <input id="icon_prefix" name="name" type="text" [(ngModel)]="message.name" class="validate">
             <label for="icon_prefix">Name</label>
         </div>
         <div class="input-field">
-            <input id="email" name="inputEmail" type="email" class="validate">
+            <input id="email" name="email" type="email" [(ngModel)]="message.email" class="validate">
             <label for="email" data-error="Please enter valid email">Email</label>
         </div>
         <div class="input-field">
-            <textarea id="textarea1" name="inputMessage" class="materialize-textarea validate"></textarea>
+            <textarea id="textarea1" name="message" [(ngModel)]="message.message" class="materialize-textarea validate"></textarea>
             <label for="textarea1">Message</label>
         </div>
+        <div *ngIf="success" class="success-message">Success! Thank you for reaching out, I will be in touch shortly.</div>
         <button class="btn btn-submit-msg waves-effect waves-light" type="submit" name="action">Submit
             <i class="material-icons right">send</i>
         </button>

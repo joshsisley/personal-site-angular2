@@ -1,44 +1,44 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'search-results',
-  templateUrl: './search-results.component.html'
+	selector: 'search-results',
+	templateUrl: './search-results.component.html'
 })
-export class SearchResultsComponent implements OnInit { 
-	selectedTab:string;
-	selectedImageObj:any;
-	showMoreImages:boolean = false;
+export class SearchResultsComponent implements OnInit {
+	selectedTab: string;
+	selectedImageObj: any;
+	showMoreImages: boolean = false;
 
 	imagesArray = [
 		{
-			src: './assets/images/ha.png',
+			src: './assets/images/ha.jpg',
 			description: 'Hawaiian Airlines Booking Widget',
 			image: 0
 		},
 		{
-			src: './assets/images/grovado.png',
+			src: './assets/images/grovado.jpg',
 			description: 'Grovado Health Visit Page',
 			image: 1
 		},
 		{
-			src: './assets/images/resourcecenter.png',
+			src: './assets/images/resourcecenter.jpg',
 			description: 'Resource Center - Internal Resources',
 			image: 2
 		},
 		{
-			src: './assets/images/evenodds.png',
+			src: './assets/images/evenodds.jpg',
 			description: 'Even Odds Home Page',
 			image: 3
 		},
 		{
-			src: './assets/images/btxr.png',
+			src: './assets/images/btxr.jpg',
 			description: 'BTXR Home Page',
 			image: 4
 		}
 	]
 
 	ngOnInit() {
-		this.selectedTab = "projects";
+		this.selectedTab = "experience";
 		this.selectedImageObj = this.imagesArray[0];
 	}
 
