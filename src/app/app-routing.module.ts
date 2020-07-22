@@ -12,11 +12,7 @@ const routes: Routes = [
 	{
 		path: 'search-results',
 		component: SearchResultsComponent
-	},
-	{
-		path: '**',
-		redirectTo: '/search-results'
-	},
+	}
 ];
 
 @NgModule({
